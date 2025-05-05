@@ -78,7 +78,7 @@ class FrameListener(Node):
                     t.transform.translation.y,
                     t.transform.translation.x)
 
-                scale_forward_speed = 1.0
+                scale_forward_speed = 0.5
                 msg.linear.x = scale_forward_speed * math.sqrt(
                     t.transform.translation.x ** 2 +
                     t.transform.translation.y ** 2)
