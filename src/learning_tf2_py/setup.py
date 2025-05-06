@@ -1,5 +1,5 @@
-import os
 from glob import glob
+import os
 
 from setuptools import find_packages, setup
 
@@ -28,6 +28,7 @@ setup(
             'turtle_tf2_broadcaster = learning_tf2_py.turtle_tf2_broadcaster:main',
             'turtle_tf2_listener = learning_tf2_py.turtle_tf2_listener:main',
             'fixed_frame_tf2_broadcaster = learning_tf2_py.fixed_frame_tf2_broadcaster:main',
+            'dynamic_frame_tf2_broadcaster = learning_tf2_py.dynamic_frame_tf2_broadcaster:main',
         ],
     },
 )

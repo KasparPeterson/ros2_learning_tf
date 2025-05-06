@@ -34,6 +34,28 @@ ros2 run turtlesim turtle_teleop_key
 ros2 run tf2_ros tf2_echo world turtle1
 ```
 
+### Fixed Frame Broadcaster (carrot)
+
+```shell
+ros2 launch learning_tf2_py turtle_tf2_fixed_frame_demo_launch.py target_frame:=carrot1
+```
+
+### Dynamic Frame Broadcaster (carrot)
+
+```shell
+ros2 launch learning_tf2_py turtle_tf2_dynamic_frame_demo_launch.py
+```
+
+### Unit tests
+
+```shell
+colcon test
+# or
+colcon test --event-handlers console_cohesion+
+
+colcon test-result --all # echo $? shows 0 for success and 1 for failure
+```
+
 ## Extra
 
 TF visualisation:

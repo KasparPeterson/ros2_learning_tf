@@ -83,8 +83,9 @@ class FrameListener(Node):
                     t.transform.translation.x ** 2 +
                     t.transform.translation.y ** 2)
 
-                self.get_logger().info(f"Transform x: {t.transform.translation.x}, y: {t.transform.translation.y}")
-                self.get_logger().info(f"z: {msg.angular.z:.3f}, x: {msg.linear.x:.3f}")
+                self.get_logger().info(f'Transform x: {t.transform.translation.x}, '
+                                       f'y: {t.transform.translation.y}')
+                self.get_logger().info(f'z: {msg.angular.z:.3f}, x: {msg.linear.x:.3f}')
                 self.publisher.publish(msg)
             else:
                 if self.result.done():
